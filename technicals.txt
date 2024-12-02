@@ -1,0 +1,60 @@
+Parece que tu sistema está utilizando Python 3.12 por defecto. Dado que necesitas usar Python 3.10, debes asegurarte de que esa versión esté correctamente instalada y configurada. Aquí te dejo los pasos detallados para hacerlo:
+
+### Paso 1: Verificar la instalación de Python 3.10
+
+1. **Verifica si tienes Python 3.10 en tu sistema**:
+   - Abre PowerShell o la terminal y ejecuta:
+     ```bash
+     py -3.10 --version
+     ```
+     Esto debería mostrarte la versión de Python 3.10 si está instalado correctamente. Si no funciona, puede que no tengas Python 3.10 instalado o que no esté correctamente configurado en el PATH.
+
+2. **Reinstalar o agregar Python 3.10 al PATH**:
+   Si no tienes Python 3.10 o no se reconoce el comando `py -3.10`, asegúrate de que Python 3.10 esté instalado. Puedes descargarlo desde el sitio oficial de [Python 3.10](https://www.python.org/downloads/release/python-3100/).
+
+   Al instalar Python 3.10, asegúrate de **marcar la opción "Add Python 3.10 to PATH"** durante la instalación.
+
+### Paso 2: Usar Python 3.10 en el entorno
+
+Si Python 3.10 ya está instalado y accesible, puedes crear un entorno virtual con la versión específica de Python:
+
+1. **Crear un entorno virtual con Python 3.10**:
+   Ejecuta el siguiente comando para crear un entorno virtual con Python 3.10:
+
+   ```bash
+   py -3.10 -m venv venv
+   ```
+
+   Esto debería crear un entorno virtual en la carpeta `venv`.
+
+2. **Activar el entorno virtual**:
+   - **Windows (CMD)**:
+     ```bash
+     .\venv\Scripts\activate
+     ```
+   - **Windows (PowerShell)**:
+     ```bash
+     .\venv\Scripts\Activate.ps1
+     ```
+
+### Paso 3: Instalar Kivy en el entorno virtual
+
+3. **Instalar Kivy en el entorno virtual**:
+   
+   Una vez que el entorno virtual esté activado, instala Kivy:
+
+   ```bash
+   pip install kivy[full]
+   ```
+
+### Paso 4: Ejecutar el script
+
+4. **Ejecutar el script**:
+   
+   Con el entorno virtual activado, ejecuta tu script de Kivy:
+
+   ```bash
+   & .\venv\Scripts\python.exe c:/Users/jmlop/Documents/AZEN/codbarra-python/KiviApp/test.py
+   ```
+
+Esto debería permitirte usar Python 3.10 y ejecutar tu aplicación de Kivy correctamente. Si necesitas más ayuda, avísame.
